@@ -95,16 +95,15 @@ input[type="file"] {
 /* RESPONSIVIDADE MOBILE */
 @media (max-width: 900px) {
   .home {
-    position: static !important;
-    width: 100vw !important;
-    min-height: 100vh;
+    position: static;
+    width: 100vw;
     padding: 16px 8px;
+    min-height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    z-index: 1;
   }
   .canvas-container {
     width: 100vw;
@@ -117,17 +116,14 @@ input[type="file"] {
   .editortabs-container,
   .filtertabs-container {
     position: static !important;
-    width: 100vw !important;
+    width: 100vw;
     min-width: 0;
     margin: 0 auto 8px auto;
-    flex-direction: row !important;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8px;
     z-index: 2;
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
   }
   .download-btn,
   .upload-btn {
