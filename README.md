@@ -1,5 +1,6 @@
 # 👕 Camisetas 3D Personalizadas 
-<img width="1353" height="640" alt="image" src="https://github.com/user-attachments/assets/69122a60-033a-4b09-b303-ea8ec83bbaa3" />
+<img width="1351" height="634" alt="image" src="https://github.com/user-attachments/assets/6179fcf1-a91b-4b8b-8366-0dbf79e2724e" />
+
 
 Aplicação web interativa para personalização de camisetas em 3D com visual moderno, intuitivo e responsivo.  
 *Crie camisetas únicas com apenas alguns cliques.*
