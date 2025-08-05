@@ -72,7 +72,8 @@ const ColorPicker = () => {
           placeholder="#ffffff"
         />
         <span>
-          <strong>RGB:</strong> {hexToRgb(hex)}
+          <strong>HEX:</strong> {snap.color} <br />
+          <strong>RGB:</strong> {hexToRgb(snap.color)}
         </span>
       </div>
     </div>
