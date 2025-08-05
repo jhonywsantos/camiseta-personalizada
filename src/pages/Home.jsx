@@ -37,7 +37,7 @@ const Home = () => {
             >
               <p className="max-w-md font-normal text-gray-600 text-base">
                 Crie camisas únicas com o poder da personalização 3D! <strong>Libere sua criatividade e domine o estilo</strong>{" "}
-                
+                como nunca ousou antes!
               </p>
 
               <CustomButton
