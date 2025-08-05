@@ -71,10 +71,10 @@ camiseta-personalizada/
 ```bash
 ## ▶️ Passos
 # Clone o repositório
-git clone https://github.com/jhonywsantos/3D-Shirt-Customizer.git
+git clone https://github.com/jhonywsantos/camiseta-personalizada.git
 
 # Acesse o diretório
-cd 3D-Shirt-Customizer
+cd camiseta-personalizada
 
 # Instale as dependências
 npm install
