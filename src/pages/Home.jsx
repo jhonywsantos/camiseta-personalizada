@@ -9,6 +9,7 @@ import {
   headTextAnimation,
   slideAnimation,
 } from "../config/motion";
+import CanvasComponent from "../components/CanvasComponent"; // ajuste o nome se necessário
 
 const Home = () => {
   const snap = useSnapshot(state);
@@ -25,6 +26,11 @@ const Home = () => {
             />
           </motion.header>
 
+          {/* Adiciona o canvas/modelo da camiseta na tela inicial */}
+          <div className="canvas-container">
+            <CanvasComponent />
+          </div>
+
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
@@ -36,8 +42,9 @@ const Home = () => {
               className="flex flex-col gap-5"
             >
               <p className="max-w-md font-normal text-gray-600 text-base">
-                Crie camisas únicas com o poder da personalização 3D! <strong>Libere sua criatividade e domine o estilo</strong>{" "}
-                 como nunca antes.
+                Crie camisas únicas com o poder da personalização 3D!{" "}
+                <strong>Libere sua criatividade e domine o estilo</strong> como
+                nunca antes.
               </p>
 
               <CustomButton
