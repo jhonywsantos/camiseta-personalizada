@@ -17,7 +17,9 @@ Atualmente, dois plugins oficiais estão disponíveis:
 
 O **Camiseta Personalizada** é uma aplicação web que permite ao usuário:
 
-- 🎨 Personalizar a cor da camiseta em tempo real  
+- 🎨 Personalizar a cor da camiseta em tempo real
+<img width="911" height="590" alt="image" src="https://github.com/user-attachments/assets/f2e8a248-b5c1-4de2-9427-ffbeedd2d558" />
+ 
 - 📷 Fazer upload de imagens ou aplicar logos e estampas  
 - 🔄 Girar, visualizar e manipular o modelo 3D com fluidez
 <img width="1007" height="629" alt="image" src="https://github.com/user-attachments/assets/2b1b77d0-d8c2-44c1-81af-0d330bdcc8a0" />  
