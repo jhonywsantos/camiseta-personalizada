@@ -9,7 +9,7 @@ import {
   headTextAnimation,
   slideAnimation,
 } from "../config/motion";
-import CanvasComponent from "../components/CanvasComponent"; // ajuste o nome se necessário
+import CanvasComponent from "../canvas/components"; // ajuste o nome se necessário
 
 const Home = () => {
   const snap = useSnapshot(state);
