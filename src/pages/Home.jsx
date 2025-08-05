@@ -28,7 +28,15 @@ const Home = () => {
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
-                FAÇA<br className="xl:block hidden" />AGORA!
+                <span style={{
+                  background: 'linear-gradient(to right, #22140f, #642720)',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  color: 'transparent',
+                  display: 'inline'
+                }}>
+                  FAÇA<br className="xl:block hidden" />AGORA!
+                </span>
               </h1>
             </motion.div>
             <motion.div
