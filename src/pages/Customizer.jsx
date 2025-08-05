@@ -2,25 +2,20 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useSnapshot } from "valtio";
 
-import config from "../config/config";
 import state from "../store";
-import { download } from "../assets";
-import { downloadCanvasToImage, reader } from "../config/helpers";
 import { EditorTabs, FilterTabs, DecalTypes } from "../config/constants";
+import Tab from "../components/Tab";
+import FilePicker from "../components/FilePicker";
+import AIPicker from "../components/AIPicker";
+import ColorPicker from "../components/ColorPicker";
+import CustomButton from "../components/CustomButton";
+import { reader } from "../config/helpers";
 import { fadeAnimation, slideAnimation } from "../config/motion";
-import {
-  AIPicker,
-  ColorPicker,
-  CustomButton,
-  FilePicker,
-  Tab,
-} from "../components";
 
 const Customizer = () => {
   const snap = useSnapshot(state);
 
   const [file, setFile] = useState("");
-
   const [prompt, setPrompt] = useState("");
   const [generatingImg, setGeneratingImg] = useState(false);
 
@@ -40,10 +35,10 @@ const Customizer = () => {
       case "aipicker":
         return (
           <AIPicker
-          // prompt={prompt}
-          // setPrompt={setPrompt}
-          // generatingImg={generatingImg}
-          // handleSubmit={handleSubmit}
+            prompt={prompt}
+            setPrompt={setPrompt}
+            generatingImg={generatingImg}
+            handleSubmit={handleSubmit}
           />
         );
       default:
@@ -102,8 +97,6 @@ const Customizer = () => {
         break;
     }
 
-    // after setting the state, activeFilterTab is updated
-
     setActiveFilterTab((prevState) => {
       return {
         ...prevState,
@@ -125,11 +118,11 @@ const Customizer = () => {
         <>
           <motion.div
             key="custom"
-            className="absolute top-0 left-0 z-10"
+            className="absolute top-0 left-0 z-10 w-full min-h-screen flex items-center justify-center px-2 py-2 max-md:static max-md:px-1 max-md:py-1"
             {...slideAnimation("left")}
           >
-            <div className="flex items-center min-h-screen">
-              <div className="editortabs-container tabs">
+            <div className="flex items-center min-h-screen w-full max-md:flex-col max-md:items-stretch">
+              <div className="editortabs-container tabs max-md:w-full max-md:flex-row max-md:gap-2">
                 {EditorTabs.map((tab) => (
                   <Tab
                     key={tab.name}
@@ -137,26 +130,25 @@ const Customizer = () => {
                     handleClick={() => setActiveEditorTab(tab.name)}
                   />
                 ))}
-
                 {generateTabContent()}
               </div>
             </div>
           </motion.div>
 
           <motion.div
-            className="absolute z-10 top-5 right-5"
+            className="absolute z-10 top-5 right-5 max-md:static max-md:top-auto max-md:right-auto max-md:w-full max-md:flex max-md:justify-center"
             {...fadeAnimation}
           >
             <CustomButton
               type="filled"
               title="Voltar"
               handleClick={() => (state.intro = true)}
-              customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+              customStyles="w-fit px-4 py-2.5 font-bold text-sm max-md:w-full"
             />
           </motion.div>
 
           <motion.div
-            className="filtertabs-container"
+            className="filtertabs-container max-md:static max-md:w-full max-md:flex-wrap max-md:gap-2"
             {...slideAnimation("up")}
           >
             {FilterTabs.map((tab) => (
