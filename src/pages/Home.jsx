@@ -29,7 +29,7 @@ const Home = () => {
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
                 <span style={{
-                  backgroundImage: 'linear-gradient(to right, #22140f, #642720)',
+                  backgroundImage: 'linear-gradient(to right, #22140f, #071f66)',
                   WebkitBackgroundClip: 'text',
                   backgroundClip: 'text',
                   color: 'transparent',
