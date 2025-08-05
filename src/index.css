@@ -100,54 +100,37 @@ input[type="file"] {
     padding: 16px 8px;
     min-height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
-  .editortabs-container {
-    flex-direction: row;
+  .canvas-container {
     width: 100vw;
-    min-width: 0;
-    gap: 8px;
-    margin-left: 0;
-    padding: 8px 0;
-    border-radius: 0.75rem;
-  }
-  .filtertabs-container {
-    position: static;
-    width: 100vw;
-    gap: 8px;
-    padding: 8px 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  .aipicker-container,
-  .filepicker-container {
-    position: static;
-    margin-left: 0;
-    width: 100vw;
-    min-width: 0;
     max-width: 100vw;
-    height: auto;
-    padding: 12px 8px;
-    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
   }
-  .sketch-picker {
-    width: 100vw !important;
-    min-width: 0 !important;
-    max-width: 100vw !important;
-  }
-  .head-text {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    text-align: center;
-    word-break: break-word;
+  .editortabs-container,
+  .filtertabs-container {
+    position: static !important;
+    width: 100vw;
+    min-width: 0;
+    margin: 0 auto 8px auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
   }
   .download-btn,
-  .tab-btn {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.1rem;
+  .upload-btn {
+    width: 100vw;
+    margin: 0 auto 8px auto;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -163,6 +146,10 @@ input[type="file"] {
   .filtertabs-container {
     gap: 6px;
     padding: 6px 0;
+    margin-bottom: 6px;
+  }
+  .canvas-container {
+    margin-bottom: 12px;
   }
   .head-text {
     font-size: 2rem;
