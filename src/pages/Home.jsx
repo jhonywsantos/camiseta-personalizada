@@ -9,7 +9,6 @@ import {
   headTextAnimation,
   slideAnimation,
 } from "../config/motion";
-import CanvasComponent from "../components/CanvasComponent";
 
 const Home = () => {
   const snap = useSnapshot(state);
@@ -26,10 +25,6 @@ const Home = () => {
             />
           </motion.header>
 
-          <div className="canvas-container w-full flex justify-center items-center mb-4">
-            <CanvasComponent />
-          </div>
-
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
@@ -40,9 +35,8 @@ const Home = () => {
               {...headContentAnimation}
               className="flex flex-col gap-5"
             >
-              <p className="max-w-md font-normal text-gray-600 text-base text-center md:text-left">
-                Crie camisas únicas com o poder da personalização 3D!{" "}
-                <strong>Libere sua criatividade e domine o estilo</strong>{" "}
+              <p className="max-w-md font-normal text-gray-600 text-base">
+                Crie camisas únicas com o poder da personalização 3D! <strong>Libere sua criatividade e domine o estilo</strong>{" "}
                 como nunca ousou antes!
               </p>
 
@@ -50,7 +44,7 @@ const Home = () => {
                 type="filled"
                 title="Personalizar Camiseta!"
                 handleClick={() => (state.intro = false)}
-                customStyles="w-full md:w-fit px-4 py-2.5 font-bold text-sm"
+                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
             </motion.div>
           </motion.div>
