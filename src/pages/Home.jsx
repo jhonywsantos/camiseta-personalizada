@@ -36,8 +36,8 @@ const Home = () => {
               className="flex flex-col gap-5"
             >
               <p className="max-w-md font-normal text-gray-600 text-base">
-                Crie camisetas personalizadas com a exclusiva ferramenta de personalização 3D <strong>Libere sua imaginação</strong>{" "}
-                e defina seu próprio estilo.
+                Crie camisas únicas com o poder da personalização 3D! <strong>Libere sua criatividade e domine o estilo</strong>{" "}
+                 como nunca antes.
               </p>
 
               <CustomButton
